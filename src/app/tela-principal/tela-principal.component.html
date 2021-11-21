@@ -1,0 +1,35 @@
+<header>
+    <div class="nav">
+        <h2>Climatizando</h2>
+        <div class="area-input">
+            <input type="text" placeholder="Pesquisar Cidade" [(ngModel)]="cidade">
+            <button (click)="pesquisarCidade()">
+                <mat-icon>search</mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="info-cidades">
+        <span>Clima agora em "Cidade"</span>
+        <span>temperatura</span>
+    </div>
+</header>
+
+<main>
+    <section class="temperatura">
+
+        <div class="tempAgora">
+            <h3>Temperatura agora {{tempAgora}}</h3>
+            <div class="condicoesClimaticas">
+                <i>{{iconeCondicao}}</i>
+                <p>{{condicaoAgora}}</p>
+            </div>
+            <p>Max: {{maxTempAtual}}</p>
+            <p>Min: {{minTempAtual}}</p>
+            <span>Umidade: 70%</span>
+            <span>Precipitação mm: 10%</span>
+        </div>
+
+        <button>Ver Mais</button>
+    </section>
+</main>

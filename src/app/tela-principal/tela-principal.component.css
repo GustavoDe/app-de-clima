@@ -1,0 +1,71 @@
+* {
+    --headernav: #3787b8;
+    --headerInfoCidades: #8fcaee;
+    --colorTitle:#405b6b;
+    --temperaturaCard: #46aceb;
+    --borderradius: 8px;
+}
+
+header{
+    height: 12vw;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vw;
+    background-color: var(--headernav);
+}
+.nav h2{
+    margin: 10px;
+    color: var(--colorTitle);
+}
+
+.nav input{
+    height: 30px;
+    border-radius: var(--borderradius);
+    border: none;
+    margin: 10px;
+}
+
+.area-input{
+    display: flex;
+    align-items: center;
+}
+
+.area-input button{
+    background: none;
+    border: none;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.info-cidades{
+    display: flex;
+    align-items: center;
+    height: 5vw;
+    background-color: var(--headerInfoCidades);
+}
+
+.info-cidades span{
+    margin: 10px;
+    display: flex;
+}
+
+.temperatura{
+    width: 30vw;
+    height: 40vh;
+    margin: 8px;
+    background: var(--temperaturaCard);
+    border-radius: var(--borderradius);
+}
+
+.temperatura button {
+    width: 90px;
+    padding: 10px;
+    background: rgb(255, 251, 147);
+    border:none;
+    border-radius:var(--borderradius);
+}
